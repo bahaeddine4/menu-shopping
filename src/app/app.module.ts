@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule}  from '@angular/forms';
+
 
 
 import { AppComponent } from './app.component';
+import { CategoryComponent } from './category/category.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CategoryComponent,
+    CartComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule, NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

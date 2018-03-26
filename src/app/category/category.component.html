@@ -1,0 +1,11 @@
+
+<div class="pure-css-select-style theme-default">
+    <select class='select-option'  (change)="modo($event.target.value)"  >
+
+      <option  selected disabled >{{name}}</option>
+
+        <option class='option' *ngFor='let option of products' [value]="option.name"   >
+          {{option.name}}</option>
+
+    </select>
+  </div>

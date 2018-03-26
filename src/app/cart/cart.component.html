@@ -1,0 +1,74 @@
+
+  <table>
+    <tr>
+      <th>
+        <style type="text/css">
+          th {
+      text-align: left;
+      padding: 8px;
+  }
+        </style>
+        <div  *ngFor="let category of categories">
+            <div >
+              <app-category [data]="category" (messageEvent) = "momo($event)" ></app-category>
+
+            </div>
+          </div>
+
+        </th>
+      
+        <th>
+
+
+
+
+            <div class="paypal">
+
+                <div class="paypal__header">
+
+
+
+                </div>
+
+                <div class="paypal__subheader-wrapper">
+                  <div class="paypal__subheader">
+                    <h1 class="paypal__username">HI User</h1>
+                    <span class="paypal__help-text">you've purchased these items in our store:</span>
+                  </div>
+                </div>
+
+                <div class="paypal__cart">
+                  <h2 class="paypal__cart-title">Cart:</h2>
+
+                  <ul class="paypal__cart-list">
+
+                    <div *ngFor="let i of items">
+
+
+                      <li class="paypal__cart-item">
+                        <span class="paypal__index">{{i.occurence}}</span>
+                        <span class="paypal__item-name">{{i.item}}</span>
+                        <span class="paypal__item-price">{{i.price}}$</span>
+                      </li>
+
+
+                    </div>
+
+
+                    <li class="paypal__cart-item">
+                      <span class="paypal__cart-total">Total</span>
+                      <span class="paypal__item-price">${{prix}}</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="paypal__footer">
+                  <img src="https://s32.postimg.org/w4h06poc1/barcode.png" alt="Paypal Barcode" class="paypal__barcode">
+                </div>
+              </div>
+
+
+
+          </th>
+         </tr>
+       </table>
