@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import categoriesData from '../../data/menu'
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import categoriesData from '../../data/menu.js';
+
 
 @Component({
   selector: 'app-root',

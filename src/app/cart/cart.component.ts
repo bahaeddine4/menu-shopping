@@ -72,6 +72,6 @@ var j
 for (j = 0; j < this.items.length; j++) {
 this.prix = this.prix + this.items[j].price * this.items[j].occurence;
 }
-
+}
 
 }

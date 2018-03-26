@@ -16,7 +16,7 @@ import { CartComponent } from './cart/cart.component';
     CartComponent
   ],
   imports: [
-    BrowserModule, FormsModule, NgbModule.forRoot()
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
